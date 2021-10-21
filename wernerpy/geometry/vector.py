@@ -26,29 +26,29 @@ class Vector:
 
             self.norm = self._internal_repr / denom
 
-    def dot(self, other: Vector) -> float:
+    def dot(self, other: "Vector") -> float:
 
         return np.dot(self._internal_repr, other._internal_repr)
 
-    def __add__(self, other: Vector) -> Vector:
+    def __add__(self, other: "Vector") -> "Vector":
 
         new_vec = self._internal_repr + other._internal_repr
 
         return Vector(new_vec[0], new_vec[1], new_vec[2])
 
-    def __sub__(self, other: Vector) -> Vector:
+    def __sub__(self, other: "Vector") -> "Vector":
 
         new_vec = self._internal_repr - other._internal_repr
 
         return Vector(new_vec[0], new_vec[1], new_vec[2])
 
-    def __mul__(self, factor: float) -> Vector:
+    def __mul__(self, factor: float) -> "Vector":
 
         new_vec = factor * self._internal_repr
 
         return Vector(new_vec[0], new_vec[1], new_vec[2])
 
-    def __rmul__(self, factor: float) -> Vector:
+    def __rmul__(self, factor: float) -> "Vector":
 
         new_vec = factor * self._internal_repr
 
