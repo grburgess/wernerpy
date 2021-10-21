@@ -28,7 +28,7 @@ class Vector:
 
     def dot(self, other: Vector) -> float:
 
-        return np.dot(self._internal_reprnal, other._internal_repr)
+        return np.dot(self._internal_repr, other._internal_repr)
 
     def __add__(self, other: Vector) -> Vector:
 

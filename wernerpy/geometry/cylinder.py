@@ -2,7 +2,7 @@ import numba as nb
 import numpy as np
 
 from .vector import Vector
-
+from .ray import Ray
 
 class Cylinder:
     def __init__(
